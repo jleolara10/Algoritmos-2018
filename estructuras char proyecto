@@ -1,0 +1,52 @@
+#pragma once
+
+#include "targetver.h"
+
+#include <stdio.h>
+#include <tchar.h>
+
+//---------------------Estructuras para Guardar------------------------------
+
+struct oficioc
+{
+	char nombre[50];
+	char descripcion[100];
+};
+struct empleadorc
+{
+	char usuario[20];
+	char nombre[30];
+	char apellido[30];
+	int ci;
+	int telefono;
+};
+
+struct empleadoc
+{
+	char usuario[20];
+	char nombre[30];
+	char apellido[30];
+	int ci;
+	int telefono;
+	char direccion[50];
+};
+struct usuarioc
+{
+	char usuario[20];
+	char password[20];
+};
+struct servicioc
+{
+	char usuario[20];
+	char oficio[50];
+};
+
+
+struct cotizacionc
+{
+	char usuario_orig[20];
+	char usuario_dest[20];
+	char oficio[50];
+	char Mensaje[200];
+	int precio;
+};
